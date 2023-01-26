@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <script>
+        var numeroInicial = prompt("digite um numero");
+        var sinal = prompt("digite um sinal");         
+
+        while(sinal != "+" && sinal != "-" && sinal != "/" && sinal !="*"){
+                alert("digite um sinal valido")
+                sinal = prompt("digite um sinal");
+        }
+
+        var numeroFinal = prompt("digite um numero");  
+
+        var resultadoFinal = 0;
+
+        numeroInicial =parseInt(numeroInicial);
+        numeroFinal= parseInt(numeroFinal);
+          
+        if(sinal == "+"){
+             resultadoFinal = numeroInicial + numeroFinal;
+        }else if(sinal == "-"){
+            resultadoFinal = numeroInicial - numeroFinal; 
+        }else if (sinal == "/"){
+             resultadoFinal = numeroInicial / numeroFinal;
+        }else if(sinal == "*"){
+            resultadoFinal = numeroInicial * numeroFinal;
+        }
+        alert("seu resulatdo é "+ resultadoFinal);
+        </script>
+    </script>
+</body>
+</html>
